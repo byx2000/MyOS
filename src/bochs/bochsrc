@@ -1,0 +1,9 @@
+megs: 32
+romimage: file=/usr/local/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest
+boot: disk
+ata0: enabled=true, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
+ata0-master: type=disk, path="bochs/hd.img", mode=flat
+log: bochs/log.txt
+mouse: enabled=0
+clock: sync=realtime, rtc_sync=1, time0=local # make clock frequency normal
